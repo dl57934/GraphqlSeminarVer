@@ -1,0 +1,9 @@
+{
+  "name": "Backend",
+  "version": "1.0.0",
+  "description": "Graphql seminar Test",
+  "main": "index.js",
+  "repository": "https://github.com/dl57934/GraphqlSeminarVer.git",
+  "author": "dl57934@pukyong.ac.lr",
+  "license": "MIT"
+}
