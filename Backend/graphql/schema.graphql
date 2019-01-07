@@ -1,0 +1,4 @@
+type Query {
+  firstSchema: String
+  secondSchema(input1: String!, input2: String!): String!
+}
