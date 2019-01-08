@@ -1,3 +1,15 @@
 type Query {
   firstSchema: String!
+  schemaWithArguments(id: String!, age: Int!): String!
+  getMovieDetail(id: Int!, name: String, story: String): movie!
+}
+
+type Mutation {
+  changeAge(id: Int!): Int!
+}
+
+type movie {
+  name: String!
+  actor: String!
+  story: String!
 }
