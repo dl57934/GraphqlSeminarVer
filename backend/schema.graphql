@@ -1,0 +1,21 @@
+type Query {
+  firstSchema: String!
+  schemaWithParam(id: Int!): String!
+  getMovieDetails: [movie]!
+}
+
+type movie {
+  id: Int
+  title: String
+  rating: Float
+  medium_cover_image: String
+  description_full: String
+  genres: [String]
+  torrents: [torrents]
+}
+
+type torrents {
+  url: String!
+  quality: String!
+  size: String!
+}
