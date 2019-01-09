@@ -7,5 +7,5 @@ const server = new GraphQLServer({
 });
 
 server.start(() => {
-  console.log("graphql Start");
+  console.log("graphql Yoga");
 });

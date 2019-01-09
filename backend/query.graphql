@@ -1,4 +1,18 @@
 type Query {
-  firstSchema: String!
-  schemaWithArguments(name: String!): String!
+  firstQuery: String!
+  queryWithArgu(id: Int!, name: String!): String!
+  movieList: [movie]!
+}
+
+type movie {
+  title: String!
+  genres: [String]!
+  description_full: String!
+  torrents: [torrents]
+}
+
+type torrents {
+  url: String!
+  quality: String!
+  size: String!
 }

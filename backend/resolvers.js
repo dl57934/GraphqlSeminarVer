@@ -1,7 +1,10 @@
+import movieApi from "./movieApi";
+
 const resolvers = {
   Query: {
-    firstSchema: () => "hi GraphQL Server",
-    schemaWithArguments: (_, { name }) => name
+    firstQuery: () => "hi GraphQL",
+    queryWithArgu: (_, { id, name }) => `${id} + ${name}`,
+    movieList: () => movieApi()
   }
 };
 
